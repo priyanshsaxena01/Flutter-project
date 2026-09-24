@@ -6,14 +6,16 @@ version: 1.0.0+1
 environment:
   sdk: ^3.7.0
 
-# Only pure-Dart packages: no Android/iOS setup, no backend to install.
-# The bank server runs inside the app (lib/mock_server).
+# No backend to install: the bank server runs inside the app
+# (lib/mock_server). local_auth gives the real fingerprint / face check on
+# phones; see android/ and ios/ for its small platform setup.
 dependencies:
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.6.1
   go_router: ^14.8.1
   dio: ^5.7.0
+  local_auth: ^2.3.0
 
 dev_dependencies:
   flutter_test:
