@@ -1,0 +1,26 @@
+name: fraud_shield
+description: FraudShield - real-time fraud alerts, instant blocking and dispute management (Flutter Banking Capstone P10).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+# Only pure-Dart packages: no Android/iOS setup, no backend to install.
+# The bank server runs inside the app (lib/mock_server).
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+  go_router: ^14.8.1
+  dio: ^5.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
